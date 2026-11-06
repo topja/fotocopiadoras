@@ -161,6 +161,11 @@ footer{padding-block:28px calc(28px + 64px);font-size:.88rem;color:var(--muted)}
 .track li:hover .logo{filter:none;opacity:1}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .track .logo{filter:grayscale(1) brightness(1.6)}}
 :root[data-theme="dark"] .track .logo{filter:grayscale(1) brightness(1.6)}
+.intro{padding-block:clamp(40px,6vw,72px)}
+.intro-in{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,64px);align-items:center}
+@media (max-width:640px){.intro-in{grid-template-columns:1fr}}
+.intro-in>*{min-width:0}
+.intro p{font-size:clamp(1.1rem,2vw,1.35rem);line-height:1.5;color:var(--ink);max-width:34em}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -210,6 +215,13 @@ footer{padding-block:28px calc(28px + 64px);font-size:.88rem;color:var(--muted)}
       <ul class="track" aria-hidden="true"><li><img class="logo" src="logos/ubiobio.png" alt="Universidad del Bío-Bío" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Universidad del Bío-Bío</span></li><li><img class="logo" src="logos/pdi.png" alt="PDI" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>PDI</span></li><li><img class="logo" src="logos/banco-de-chile.png" alt="Banco de Chile" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Banco de Chile</span></li><li><img class="logo" src="logos/bci.png" alt="BCI" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>BCI</span></li><li><img class="logo" src="logos/correos-de-chile.png" alt="Correos de Chile" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Correos de Chile</span></li><li><img class="logo" src="logos/municipalidad-bulnes.png" alt="Municipalidad de Bulnes" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Municipalidad de Bulnes</span></li><li><img class="logo" src="logos/cbr-san-carlos.png" alt="Conservador de Bienes Raíces de San Carlos" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Conservador de Bienes Raíces de San Carlos</span></li><li><img class="logo" src="logos/colegio-arbol-de-la-vida.png" alt="Colegio Árbol de la Vida" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Colegio Árbol de la Vida</span></li></ul>
     </div>
   </div>
+
+  <section id="experiencia" class="intro">
+    <div class="wrap intro-in">
+      <div class="big">+30<small>años de experiencia</small></div>
+      <p>Técnico en electrónica dedicado a fotocopiadoras e impresoras multifuncionales desde 1989. Conozco a fondo los equipos de las principales marcas y trabajo con instituciones públicas, bancos, colegios y empresas.</p>
+    </div>
+  </section>
 
   <section id="servicios" class="alt">
     <div class="wrap">
