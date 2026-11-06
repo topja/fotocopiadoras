@@ -99,11 +99,11 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgb
 .row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none}
 .row::-webkit-scrollbar{display:none}
 @media (max-width:760px){.row{grid-auto-columns:82%}}
-.card{scroll-snap-align:start;position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:16/10;max-width:100%;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;transition:transform .25s ease;isolation:isolate}
+.card{scroll-snap-align:start;position:relative;border-radius:var(--r);overflow:hidden;max-width:100%;padding:42px 22px 22px;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;transition:transform .25s ease;isolation:isolate}
 .card:hover{transform:scale(1.02)}
 .card::before{content:"";position:absolute;inset:0;z-index:-1}
 .card.c1::before,.card.c2::before,.card.c3::before{background:radial-gradient(110% 90% at 90% 0%,#24375c 0%,#15223b 50%,#0f1a2e 100%);box-shadow:inset 0 0 0 1px rgba(201,169,106,.16);border-radius:inherit}
-.card::after{content:"";position:absolute;left:20px;top:20px;width:28px;height:2px;background:var(--gold);border-radius:2px}
+.card::after{content:"";position:absolute;left:22px;top:24px;width:28px;height:2px;background:var(--gold);border-radius:2px}
 .card .k{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
 .card h3{font-size:1.5rem}
 .card p{color:rgba(255,255,255,.78);font-size:.95rem;max-width:26em}
