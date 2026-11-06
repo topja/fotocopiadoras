@@ -157,6 +157,10 @@ footer{padding-block:28px calc(28px + 64px);font-size:.88rem;color:var(--muted)}
   .marquee{-webkit-mask-image:none;mask-image:none}
   .track li::after{display:none}
 }
+.track .logo{display:block;height:40px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1);opacity:.7;transition:filter .2s,opacity .2s}
+.track li:hover .logo{filter:none;opacity:1}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .track .logo{filter:grayscale(1) brightness(1.6)}}
+:root[data-theme="dark"] .track .logo{filter:grayscale(1) brightness(1.6)}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -202,25 +206,10 @@ footer{padding-block:28px calc(28px + 64px);font-size:.88rem;color:var(--muted)}
       <p class="label">Han confiado en mi trabajo</p>
     </div>
     <div class="marquee" aria-label="Instituciones que han confiado en mi trabajo">
-      <ul class="track"><li>Universidad del Bío-Bío</li><li>PDI</li><li>Banco de Chile</li><li>BCI</li><li>Correos de Chile</li><li>Municipalidad de Bulnes</li><li>Conservador de Bienes Raíces de San Carlos</li><li>Colegio Árbol de la Vida</li></ul>
-      <ul class="track" aria-hidden="true"><li>Universidad del Bío-Bío</li><li>PDI</li><li>Banco de Chile</li><li>BCI</li><li>Correos de Chile</li><li>Municipalidad de Bulnes</li><li>Conservador de Bienes Raíces de San Carlos</li><li>Colegio Árbol de la Vida</li></ul>
+      <ul class="track"><li><img class="logo" src="logos/ubiobio.png" alt="Universidad del Bío-Bío" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Universidad del Bío-Bío</span></li><li><img class="logo" src="logos/pdi.png" alt="PDI" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>PDI</span></li><li><img class="logo" src="logos/banco-de-chile.png" alt="Banco de Chile" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Banco de Chile</span></li><li><img class="logo" src="logos/bci.png" alt="BCI" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>BCI</span></li><li><img class="logo" src="logos/correos-de-chile.png" alt="Correos de Chile" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Correos de Chile</span></li><li><img class="logo" src="logos/municipalidad-bulnes.png" alt="Municipalidad de Bulnes" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Municipalidad de Bulnes</span></li><li><img class="logo" src="logos/cbr-san-carlos.png" alt="Conservador de Bienes Raíces de San Carlos" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Conservador de Bienes Raíces de San Carlos</span></li><li><img class="logo" src="logos/colegio-arbol-de-la-vida.png" alt="Colegio Árbol de la Vida" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Colegio Árbol de la Vida</span></li></ul>
+      <ul class="track" aria-hidden="true"><li><img class="logo" src="logos/ubiobio.png" alt="Universidad del Bío-Bío" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Universidad del Bío-Bío</span></li><li><img class="logo" src="logos/pdi.png" alt="PDI" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>PDI</span></li><li><img class="logo" src="logos/banco-de-chile.png" alt="Banco de Chile" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Banco de Chile</span></li><li><img class="logo" src="logos/bci.png" alt="BCI" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>BCI</span></li><li><img class="logo" src="logos/correos-de-chile.png" alt="Correos de Chile" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Correos de Chile</span></li><li><img class="logo" src="logos/municipalidad-bulnes.png" alt="Municipalidad de Bulnes" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Municipalidad de Bulnes</span></li><li><img class="logo" src="logos/cbr-san-carlos.png" alt="Conservador de Bienes Raíces de San Carlos" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Conservador de Bienes Raíces de San Carlos</span></li><li><img class="logo" src="logos/colegio-arbol-de-la-vida.png" alt="Colegio Árbol de la Vida" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>Colegio Árbol de la Vida</span></li></ul>
     </div>
   </div>
-
-  <section id="trayectoria">
-    <div class="wrap">
-      <div class="head">
-        <h2>Trayectoria</h2>
-        <div class="big">+30<small>años en equipos de oficina</small></div>
-      </div>
-      <ol class="career">
-        <li><span class="yrs">1989 – 2003</span><h3>Técnico en equipos multifuncionales</h3><p>Dimacofi, Concepción. Mantención y reparación en terreno con atención directa a clientes.</p></li>
-        <li><span class="yrs">2003 – 2012</span><h3>Empresa propia en Chillán</h3><p>Arriendo, instalación y mantención de fotocopiadoras para clientes de toda la Región de Ñuble.</p></li>
-        <li><span class="yrs">2014 – 2025</span><h3>Técnico en terreno</h3><p>Dimacofi, Temuco. Multifuncionales, impresoras y duplicadores para instituciones y empresas del sur de Chile.</p></li>
-      </ol>
-      <p class="edu"><b>Formación:</b> Técnico Universitario en Electrónica (Universidad Técnica Federico Santa María, Talcahuano) · Técnico en Redes (Instituto Diego Portales, Chillán) · Cursos técnicos Ricoh, Epson y Kyocera.</p>
-    </div>
-  </section>
 
   <section id="servicios" class="alt">
     <div class="wrap">
