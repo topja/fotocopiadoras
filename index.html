@@ -172,7 +172,32 @@ footer{padding-block:28px calc(28px + 64px);font-size:.88rem;color:var(--muted)}
 .intro p{font-size:clamp(1.1rem,2vw,1.35rem);line-height:1.5;color:var(--ink);max-width:34em}
 </style>
 
-<style>html,body{margin:0}body{min-height:100%}img{max-width:100%}</style>
+<style>html,body{margin:0}body{min-height:100%}img{max-width:100%}
+/* compact first screen: hero + clients visible on load */
+.hero{padding-block:clamp(18px,3vw,36px) clamp(18px,3vw,32px)}
+.hero-grid{grid-template-columns:1.35fr .65fr;gap:clamp(24px,4vw,56px)}
+.hero h1{font-size:clamp(1.9rem,3.4vw,2.7rem);margin-top:10px}
+.lead{font-size:1.02rem;margin-top:12px}
+.cta{margin-top:18px}
+.ticks{margin-top:14px;gap:6px 20px;font-size:.9rem}
+.portrait{max-width:300px}
+.portrait figcaption{margin-top:8px}
+.clients{padding-block:14px 16px}
+.clients .clients-in{padding-block:0 10px}
+.track .logo{height:48px}
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{order:0;max-width:220px;justify-self:start}
+}
+@media (max-width:820px){
+  .hero-grid{gap:16px}
+  .portrait{order:-1;max-width:none;display:flex;align-items:center;gap:14px}
+  .portrait .frame{width:84px;flex:none;border-radius:50%}
+  .portrait figcaption{margin:0;flex-direction:column;gap:2px}
+  .hero h1{margin-top:6px}
+  .ticks{margin-top:12px}
+}
+</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
